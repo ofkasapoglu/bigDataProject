@@ -72,3 +72,10 @@ model = XGBClassifier(
     scale_pos_weight=(benign/malicious dengesi),
     random_state=42
 )
+
+🌲 Random Forest
+200 ağaç, max_depth=20
+
+class_weight="balanced" ile sınıf dengesizliği önlenmiştir.
+
+Test seti ile karşılaştırmalı analiz yapılmıştır.
