@@ -72,10 +72,44 @@ model = XGBClassifier(
     scale_pos_weight=(benign/malicious dengesi),
     random_state=42
 )
-
+```
 🌲 Random Forest
 200 ağaç, max_depth=20
 
 class_weight="balanced" ile sınıf dengesizliği önlenmiştir.
 
 Test seti ile karşılaştırmalı analiz yapılmıştır.
+
+🖥️ Gradio Arayüzü
+```
+gr.Interface(
+    fn=predict_url_with_proba,
+    inputs=gr.Textbox(label="URL'yi girin"),
+    outputs=gr.Textbox(label="Tahmin Sonucu"),
+    title="URL Güvenlik Tahmin Aracı",
+    description="Bu araç, bir URL'nin güvenli olup olmadığını analiz eder.",
+    theme="default"
+).launch(share=True)
+```
+
+🚀 Projeyi Çalıştırma
+1. Ortam Hazırlığı
+```
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost gradio joblib
+```
+2. Çalıştır
+```
+python bigDataProject.py
+```
+Gradio arayüzü otomatik olarak açılacaktır.
+
+🔐 Güvenlik Notu
+Bu proje, eğitim ve araştırma amaçlıdır. Gerçek zamanlı güvenlik sistemlerinde bu tür modellerin gelişmiş tehdit analiz sistemleriyle birlikte kullanılması gerekir. Bu sistem, sadece URL metnine dayanarak tahmin yapar.
+
+📄 Lisans
+MIT Lisansı altında yayınlanmıştır. Ticarî kullanım için geliştirici izni gereklidir.
+
+✍️ Geliştirici
+📛 [Ömer Faruk Kasapoğlu]
+📧 [kasapoglu2100@gmail.com]
+💼 [https://www.linkedin.com/in/ömer-faruk-kasapoğlu-26a7b0262/]
