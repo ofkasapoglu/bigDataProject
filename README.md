@@ -17,7 +17,7 @@ Siber saldırıların önemli bir kısmı kullanıcıların kötü amaçlı URL'
 ## 📚 Kullanılan Veri Seti
 
 - **Dosya Adı:** `malicious_dataset_with_10000_benign.csv`
-- **Kaynak:** [Kaggle/Benzer kamu veri setleri](https://www.kaggle.com/)
+- **Kaynak:** [Kaggle/Malicious URLs dataset](https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset/code)
 - **Veri Yapısı:**  
   - `url`: İncelenecek web adresi  
   - `type`: Etiket (benign / phishing / defacement / malware)
@@ -112,4 +112,4 @@ MIT Lisansı altında yayınlanmıştır. Ticarî kullanım için geliştirici i
 ✍️ Geliştirici
 📛 [Ömer Faruk Kasapoğlu]
 📧 [kasapoglu2100@gmail.com]
-💼 [https://www.linkedin.com/in/ömer-faruk-kasapoğlu-26a7b0262/]
+💼 [linkedin.com/ÖmerFarukKasapoğlu](https://www.linkedin.com/in/ömer-faruk-kasapoğlu-26a7b0262/)
